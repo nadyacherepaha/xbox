@@ -1,0 +1,107 @@
+.header {
+    background: #373A3C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .3s linear;
+    padding-bottom: 22px;
+    z-index: 9;
+    .container {
+        padding-top: 22px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        height: 29px;
+        &-link {
+            line-height: 29px;
+        }
+    }
+    i {
+        color: #8DD83D;
+        cursor: pointer;
+    }
+    .fa {
+        padding-left: 8px;
+    }
+    &__user-pic {
+        padding-right: 8px;
+    }
+    &-top__list {
+        margin: 0 -20px;
+        &:hover .header-sub__item,
+        &:focus,
+        &:active {
+            background: #373A3C;
+        }
+    }
+    &-sub__item {
+        padding: 20px 20px 0 20px;
+        font-size: 16px;
+        line-height: 16px;
+        &:last-child {
+            padding-bottom: 20px;
+        }
+    }
+    &-top__item {
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 16px;
+        display: inline-block;
+        position: relative;
+        .header__search {
+            padding-top: 0;
+            &-form {
+                position: relative;
+                .search-item {
+                    width: 210px;
+                    height: 38px;
+                    padding: 10px 25px 10px 10px;
+                    color: #435766;
+                    line-height: 21px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                .search-button {
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                    background: #fff;
+                    padding: 0;
+                    height: 22px;
+                    border: 0;
+                    .fa {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        transition: .5s linear;
+    }
+}
+.header-sub__list {
+    position: absolute;
+    visibility: hidden;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: 0.5s ease-in;
+}
+.opacity {
+    opacity: 50%;
+    &:active,
+    &:hover,
+    &:focus {
+        opacity: 100%;
+    }
+}
+
+.visible {
+    visibility: visible;
+}
