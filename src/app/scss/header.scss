@@ -5,18 +5,15 @@
     left: 0;
     width: 100%;
     transition: .3s linear;
-    padding-bottom: 22px;
+    padding: 11px 0;
     z-index: 9;
     .container {
-        padding-top: 22px;
         display: flex;
         justify-content: space-between;
     }
     &__logo {
         height: 29px;
-        &-link {
-            line-height: 29px;
-        }
+        align-self: center;
     }
     i {
         color: #8DD83D;
