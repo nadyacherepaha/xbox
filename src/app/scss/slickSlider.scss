@@ -1,6 +1,6 @@
-
 .slider {
     padding-top: 60px;
+    margin-bottom: -2px !important;
     .slide {
         height: calc(100vh - 60px);
         position: relative;
@@ -36,18 +36,8 @@
         }
         &__button {
             padding: 10px 20px;
-            border-radius: 4px;
-            border: 0;
-            background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
-            &:hover {
-                background: #8DD83D;
-            }
             &:first-child {
                 margin-right: 12px;
-            }
-            .slide__link {
-                color: #fff;
-                text-decoration: none;
             }
         }
     }
@@ -59,19 +49,6 @@
     }
     .slick-next {
         right: 5%;
-    }
-    .slick-prev, .slick-next {
-        z-index: 1;
-    }
-    .slick-next:before {
-        content: "\f054";
-    }
-    .slick-prev:before {
-        content: "\f053";
-    }
-    .slick-prev:before, .slick-next:before {
-        font-family: 'FontAwesome';
-        color: #8dd83d;
     }
     .slick-dots {
         bottom: 42px;
@@ -107,3 +84,4 @@
         }
     }
 }
+
