@@ -1,0 +1,24 @@
+.highlights {
+    background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+    padding: 64px 0 162px 0;
+    &__headings {
+        color: #fff;
+        padding-bottom: 42px;
+    }
+    &__headings,
+    &__img {
+        text-align: center;
+    }
+    &__title {
+        padding-top: 16px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    &__subtitle {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .card {
+        background: #fff;
+    }
+}

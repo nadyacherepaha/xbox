@@ -1,0 +1,25 @@
+.designLab {
+    background: radial-gradient(100% 100% at 50% 0%, rgba(193, 255, 127, 0.1) 0%, rgba(141, 216, 61, 0.1) 100%), url(../img/designLab-bg.jpg) no-repeat center / cover;
+    padding: 130px 0;
+    color: rgba(255, 255, 255, 1);
+    &__title {
+        font-size: 48px;
+        line-height: 56px;
+        padding-bottom: 9px;
+    }
+    &__subtitle {
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 37px;
+        width: 530px;
+    }
+    &__button {
+        height: 60px;
+        min-width: 207px;
+        margin-right: 15px;
+        &:last-child {
+            width: 278px;
+            margin-right: -15px;
+        }
+    }
+}
