@@ -15,6 +15,9 @@
         height: 29px;
         align-self: center;
     }
+    .search-responsive {
+            display: none;
+    }
     i {
         color: #8DD83D;
         cursor: pointer;
@@ -47,38 +50,68 @@
         line-height: 16px;
         display: inline-block;
         position: relative;
-        .header__search {
-            padding-top: 0;
-            &-form {
-                position: relative;
-                .search-item {
-                    width: 210px;
-                    height: 38px;
-                    padding: 10px 25px 10px 10px;
-                    color: #435766;
-                    line-height: 21px;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                }
-                .search-button {
-                    position: absolute;
-                    top: 8px;
-                    right: 8px;
-                    background: #fff;
-                    padding: 0;
-                    height: 22px;
-                    border: 0;
-                    .fa {
-                        padding: 0;
-                    }
-                }
-            }
-        }
     }
+
     &__link {
         text-decoration: none;
         color: #fff;
         transition: .5s linear;
+    }
+    &__search {
+        padding-top: 0;
+        &-form {
+            position: relative;
+            .search-item {
+                width: 210px;
+                height: 38px;
+                padding: 10px 25px 10px 10px;
+                color: #435766;
+                line-height: 21px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .search-button {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background: #fff;
+                padding: 0;
+                height: 22px;
+                border: 0;
+                .fa {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    &_active {
+        background: #0E1D28;
+
+    }
+    &__burger {
+        display: none;
+        align-self: center;
+        width: 40px;
+        height: 28px;
+        position: relative;
+        .burger__line {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            &_first {
+                top: 0;
+            }
+            &_second {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &_third {
+                bottom: 0;
+            }
+        }
     }
 }
 .header-sub__list {
@@ -101,4 +134,8 @@
 
 .visible {
     visibility: visible;
+}
+
+.fixed-page {
+    overflow: hidden;
 }

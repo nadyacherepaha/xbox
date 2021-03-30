@@ -75,33 +75,33 @@ a {
             transition: 1s all ease;
             position: relative;
         }
-        .effect {
-            &:before {
-                position: absolute;
-                content: '';
-                top: 50%;
-                left: 50%;
-                transform: translateX(-50%) translateY(-50%);
-                height: 100%;
-                width: 100%;
-                z-index: -1;
-            }
-            &:hover {
-                transition: 1s all ease;
-
-            }
-            &:hover:before {
-                    padding: 70px 200px;
-                    opacity: 0;
-                    background: #8DD83D;
-                    transition: 1s all ease;
-                }
-        }
         &__title,
         &__subtitle,
         .button {
             width: 278px;
             margin: 0 21px;
         }
+    }
+}
+
+.effect {
+    &:before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    &:hover {
+        transition: 1s all ease;
+    }
+    &:hover:before {
+        padding: 70px 200px;
+        opacity: 0;
+        background: #8DD83D;
+        transition: 1s all ease;
     }
 }

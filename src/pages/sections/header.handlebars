@@ -2,8 +2,14 @@
     <div class="container">
         <div class="header__logo">
             <a href="#!" class="header__logo-link">
-                <img src="./img/svg/xbox-logo.svg" alt="logo">
+                <img class="header__logo-pic" src="./img/svg/xbox-logo.svg" alt="logo">
             </a>
+        </div>
+        <div class="header__search search-responsive">
+            <form class="header__search-form" action="">
+                <input class="search-item" type="text" placeholder="Search" name="search">
+                <button class="search-button" type="submit"><i class="fa fa-search opacity"></i></button>
+            </form>
         </div>
         <nav class="header__nav">
             <ul class="header-top__list">
@@ -53,6 +59,15 @@
                     </ul>
                 </li>
             </ul>
+            <div class="header__nav-close">
+                <span class="header__nav-close-line"></span>
+                <span class="header__nav-close-line"></span>
+            </div>
         </nav>
+        <div class="header__burger burger">
+            <span class="burger__line burger__line_first"></span>
+            <span class="burger__line burger__line_second"></span>
+            <span class="burger__line burger__line_third"></span>
+        </div>
     </div>
 </header>

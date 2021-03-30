@@ -6,4 +6,14 @@ $('.slider').slick({
   speed: 800,
   lazyLoad: 'progressive',
   dots: true,
+    responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          }
+        }
+    ]
 })
