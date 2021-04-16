@@ -80,6 +80,11 @@ let webpackPlugins = [
         filename: 'index.html',
         template: './src/pages/index.handlebars',
       }),
+        new HtmlWebpackPlugin({
+        publicPath: dirs.src,
+        filename: 'gameDetails.html',
+        template: './src/pages/gameDetails.handlebars',
+      }),
   extractCss,
   new SvgStore({
     prefix: 'icon-',

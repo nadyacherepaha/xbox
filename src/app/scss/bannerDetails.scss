@@ -1,0 +1,42 @@
+.bannerDetails {
+    background: linear-gradient(rgba(119, 119, 119, 0.35)), url(../img/gameDetails/banner.jpg) no-repeat center/cover;
+    padding-top: 60px;
+    .flex {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__content {
+        width: 40%;
+        height: auto;
+        color: #fff;
+        padding: 108px 0 180px 0;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 14px;
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 24px;
+    }
+    .button {
+        opacity: .85;
+        transition: .5s all ease;
+        padding: 8px 28px;
+        margin-bottom: 6px;
+        &:first-child {
+            margin-right: 12px;
+        }
+        &:active,
+        &:focus,
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
